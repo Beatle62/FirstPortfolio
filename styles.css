@@ -279,6 +279,9 @@ hr{
         align-items: center;
         margin-bottom: 1rem;
     }
+    .projectThree-description button{
+        text-align: center;
+    }
     .projectTwo .projectInfo{
         margin-left: 0;
     }
