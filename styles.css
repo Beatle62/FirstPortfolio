@@ -270,7 +270,7 @@ hr{
         order: 0;
     }
     .projectOne, .projectTwo, .projectThree{
-        width: 80%;
+        width: 100%;
         flex-direction: column;
         margin: 60px auto;
     }
