@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #333;
+    font-size: 1.6rem;
+    background: #FAF7FB;
+    font-family: 'Raleway', sans-serif;
+    background-image: url('../images/nyc.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    text-transform: uppercase;
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+}
+.logo{
+    color: #e3b284;
+    font-weight: bold;
+}
+.items__list li{
+    display: inline-block;
+}
+.items__list li a{
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin: 20px 10px;
+    padding: 1rem;
+    color: #333;
+    transition: .8s;
+}
+.items__list li a:hover{
+    cursor: pointer;
+    border: 2px solid #e9d8c8;
+    border-radius: 50px;
+}
+button{
+    transition: all 0.3s ease;
+    padding: 9px 25px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #333;
+    background: white;
+}
+button:hover{
+    cursor: pointer;
+    color: white;
+    background: #474F53;
+}
+#hamburger{
+    position: absolute;
+    top: .8rem;
+    right: 1rem;
+}
+span{
+    display: none;
+    position: relative;
+    background: black;
+    width: 32px;
+    height: 4px;
+    margin: 6px 0;
+    border-radius: 2px;
+}
+.change.bar-one{
+    top: 10px;
+    transform: rotate(45deg);
+}
+.change.bar-two{
+    opacity: 0;
+}
+.change.bar-three{
+    bottom: 10px;
+    transform: rotate(-45deg);
+}
+.wrapper{
+    width: 1280px;
+    max-width: 90%;
+    margin: 150px auto;
+    text-align: left;
+    font-size: 1.3rem;
+    letter-spacing: 4px;
+    padding: 10px;
+    color: #f1e1c2;
+    font-weight: 900;
+}
+@media (max-width:1150px) {
+body{
+    background-image: url('../images/nyc.jpg');
+    background-size: cover;
+    background-position: top top;
+    background-repeat: no-repeat;
+}
+header{
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    width: 100%;
+    text-align: center;
+}
+span{
+    display: block;
+}
+.items__list{
+    display: none;
+    width: 100%;
+    flex-direction: column;
+}
+.open.items__list{
+    display: flex;
+} 
+.items__list li{
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+}
+button{
+    margin: 20px 0;
+ }
+ .wrapper{
+    height: 100vh;
+ }
+}
+@media(max-width:375px){
+    .logo{
+        font-size: 1.2rem;
+    }
+}
+/**Landscape media query**/
+@media(max-width: 1366px) and (orientation:landscape){
+    body{
+        background-image: url('../images/nyc.jpg');
+        background-size: cover;
+        background-position: top top;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+}
+
+    
+
+
+
+
+

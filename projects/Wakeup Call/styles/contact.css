@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+header{
+    width: 100%;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.logo h1{
+    letter-spacing: 5px;
+}
+.logo h5{
+    letter-spacing: 10px;
+}
+.hamburger{
+    position: absolute;
+    top: .5rem;
+    right: .75rem;
+}
+.hamburger:hover{
+    cursor: pointer;
+}
+.hamburger span{
+    display: none;
+    background: #222;
+    margin: 6px 0;
+    height: 4px;
+    width: 32px;
+    border-radius: 2px;
+    position: relative;
+    transition: .3s;
+}
+.change.bar-one{
+ top: 10px;
+ transform: rotate(45deg);
+}
+.change.bar-two{
+    opacity: 0;
+}
+.change.bar-three{
+ bottom: 10px;   
+ transform: rotate(-45deg);
+ 
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.list__item{
+    list-style-type: none;
+}
+.list__item a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 20px;
+    padding: 17px;
+    color: black;
+    font-size: 1.2rem;
+}
+.container{
+    max-width: 980px;
+    margin: 100px auto;
+    text-align: center;
+}
+.container .title{
+    text-transform: uppercase;
+    padding: 30px;
+    letter-spacing: 3px;
+}
+.container .email{
+    padding: 30px;
+    letter-spacing: 3px;
+}
+.container .tel{
+    padding: 30px;
+    letter-spacing: 3px;
+}
+hr{
+    margin: 0px auto;
+    max-width: 980px;
+    background: lightgrey;
+}
+.socialMedia{
+    max-width: 980px;
+    margin: 100px auto;
+    text-align: center;
+}
+/**Media Queries**/
+@media (max-width:752px){
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo h1{
+        font-size: 2rem;
+    }
+    .logo h5{
+        font-size: 1rem;
+        letter-spacing: 5px;
+    }
+    .hamburger span{
+        display: block;
+    }
+    .menu{
+       flex-direction: column;
+       width: 100%;
+       display: none;
+    }
+    .menu.open{
+        display: flex;
+    }
+    .list__item{
+        width: 100%;
+        text-align: center;
+        margin: 1rem 0;
+    }
+}
+/**iphone portrait media queries**/
+@media(min-width: 320px) and (max-width: 374px){
+    .logo h1{
+        font-size: 1.5rem;
+       }
+    .logo h5{
+        letter-spacing: 5px;
+    }
+}
+@media(min-width: 320px) and (max-width:414px){
+    .container .title{
+        font-size: .60rem;
+        text-transform: uppercase;
+        padding: 30px;
+        letter-spacing: 3px;
+    }
+    .container .email{
+        font-size: .50rem;
+        padding: 30px;
+        letter-spacing: 3px;
+    }
+    .container .tel{
+        font-size: .50rem;
+        padding: 30px;
+        letter-spacing: 3px;
+    }
+    hr{
+     width: 280px;
+ }
+}
+@media(max-width: 768px){
+ hr{
+     max-width: 650px;
+ }
+}
+@media(max-width: 823px) and (orientation: landscape){
+    hr{
+        width: 780px;
+    }
+}
+@media(max-width: 640px) and (orientation: landscape){
+    hr{
+        width: 550px;
+    }
+}

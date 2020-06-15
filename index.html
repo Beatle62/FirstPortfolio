@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/48c5402e97.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <header>
+                <img src="images/RoyHead.jpg" alt="headshot" id="image-circle">
+        </header>  
+        <section class="intro">
+            <div class="details">
+                <h1>Hi, I'm Roy. I'm a... <span class="animate"></span></h1>
+            </div>
+            <div class="contact">
+                <button id="contactBtn">Get in touch</button>
+            </div>
+            <div class="contact-email">
+                <strong>E-mail:</strong><a href="mailto:royassouline@hotmail.com">royassouline@hotmail.com</a>
+            </div>
+        </section>
+        <section class="experience">
+            <div class="experience-title">
+                <p>My Experience</p>
+            </div>
+            <div class="tag-line">
+                <p>Designer in need. Creator at heart.</p>
+            </div>
+            <div class="skills">
+                <div class="left-column">
+                    <div class="icon">
+                        <i class="fas fa-laptop-code fa-4x"></i>
+                    </div>
+                    <h3>Front-end</h3>
+                    <ul>
+                        <li>html(5)</li>
+                        <li>css(3)</li>
+                        <li>Javascript</li>
+                        <li>jQuery</li>
+                    </ul>
+                </div>
+                <div class="right-column">
+                    <div class="icon">
+                        <i class="fas fa-code-branch fa-4x"></i>
+                    </div>
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Github</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+        </section>
+        <section class="work">
+            <div class="work-title">
+                <h1>Work</h1>
+            </div>
+            <div class="work-tagLine">
+                <p>Here are some of my projects</p>
+            </div>
+            <div class="projectOne">
+                <div class="projectInfo">
+                    <div class="projectTitle projectOne-title">
+                        <h3>Contessa Corp.</h3>
+                    </div>
+                    <div class="projectOne-description">
+                        <p>Colored stones whole seller</p>
+                        <a href="projects/Contessa/index.html"><button>Visit website</button></a>
+                    </div>   
+                </div>
+                <div class="projectPic">
+                    <img src="images/contessa1.png" alt=""class="ImgOne">
+                </div>
+            </div>
+            <div class="projectTwo">
+                <div class="projectPic">
+                    <img src="images/WakeupCall.png" alt=""class="ImgOne">
+                </div>
+                <div class="projectInfo">
+                    <div class="projectTitle projectTwo-title">
+                        <h3>Wakeup Call</h3>
+                    </div>
+                    <div class="projectTwo-description">
+                        <p>European Inspired Barista</p>
+                        <a href="projects/Wakeup Call/index.html"><button>Visit website</button></a>
+                    </div>   
+                </div>
+            </div>
+            <div class="projectThree">
+                <div class="projectInfo">
+                    <div class="projectTitle projectThree-title">
+                        <h3>Accordion</h3>
+                    </div>
+                    <div class="projectThree-description">
+                        <p>JavaScript Accordion App</p>
+                        <a href="projects/Javascript Accordion/index.html"><button>Visit website</button></a>
+                    </div>   
+                </div>
+                <div class="projectPic">
+                    <img src="images/accordion.png" alt=""class="ImgOne">
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="about-me">
+            <div class="title">
+                <h1>How I got started</h1>
+            </div>
+            <div class="background">  
+                <p>
+                    Growing up in sunny Miami, my career began in the real estate field, allowing me to meet people from all walks of life and greatly develop my communications and sales skills.  However, art and design were always my inner passion, and when a close friend told me about web development, I decided to take a look and was instantly captivated! <br>
+                    I started my journey as a self-taught developer in 2018 using resources such as Code Academy and various YouTube tutorials, and although these tools gave me a great jump-start into the field, I felt that I needed a more robust program to solidify my proficiency. 
+                    After much research I decided to take a front-end certificate course at Noble Desktop located in New York City, and upon completion I knew that I was ready for the next step.
+                    <br> What fascinates me about web development and coding in general is the constant process of learning, building, creating and ultimately delivering a beautiful and functional product to the end user. 
+                </p>
+            </div>
+        </section>
+        <section class="socialMedia">
+            <a href="https://www.linkedin.com/in/roy-assouline-45424621/"><i class="fab fa-linkedin fa-4x"></i></a>   
+            <a href="https://github.com/Beatle62/RoyPortfolio.git"><i class="fab fa-github fa-4x"></i></a>
+            <a href="https://www.instagram.com/roy_frontend/"><i class="fab fa-instagram fa-4x"></i></a>
+        </section>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/typed.js"></script>
+    <script>
+        var typed = new Typed(".animate", {
+            strings: ["Developer","Designer","Freelancer"],
+             typeSpeed: 50,
+             backSpeed: 50,
+             loop: true
+        });
+        $(document).ready(function(){
+            $('.contact').click(function() {
+                $('.contact-email').slideDown();
+            });
+            $('.contact-email').click(function() {
+                $('.contact-email').slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>

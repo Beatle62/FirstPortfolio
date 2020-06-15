@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+header{
+    width: 100%;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.logo h1{
+    letter-spacing: 5px;
+}
+.logo h5{
+    letter-spacing: 10px;
+}
+.hamburger{
+    position: absolute;
+    top: .5rem;
+    right: .75rem;
+}
+.hamburger:hover{
+    cursor: pointer;
+}
+.hamburger span{
+    display: none;
+    background: #222;
+    margin: 6px 0;
+    height: 4px;
+    width: 32px;
+    border-radius: 2px;
+    position: relative;
+    transition: .3s;
+}
+.change.bar-one{
+ top: 10px;
+ transform: rotate(45deg);
+}
+.change.bar-two{
+    opacity: 0;
+}
+.change.bar-three{
+ bottom: 10px;   
+ transform: rotate(-45deg);
+ 
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.list__item{
+    list-style-type: none;
+}
+.list__item a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 20px;
+    padding: 17px;
+    color: black;
+    font-size: 1.2rem;
+}
+.list__item a:link{
+    color: gold;
+}
+.location-one{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto;
+    font-size: 1.2rem;
+    max-width: 100%;
+}
+.locationOne-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    letter-spacing: .20rem;
+    margin: 0 20px;
+}
+.locationOne-pic{
+    margin-right: 20px;
+}
+.imgOne{
+    max-width: 100%;
+    width: 700px;
+    height: auto;
+}
+.location-two{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto;
+    font-size: 1.2rem;
+    max-width: 100%;
+}
+.locationTwo-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    letter-spacing: .20rem;
+    margin: 0 20px;
+}
+.locationTwo-pic{
+    margin-right: 20px;
+}
+.imgTwo{
+    max-width: 100%;
+    width: 700px;
+    height: auto;
+}
+hr{
+    margin: 0px auto;
+    max-width: 1280px;
+    background-color: lightgrey;
+}
+.socialMedia{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.social__Media__Icon{
+    margin: 20px;
+}
+.social__Media__Icon:hover{
+    cursor: pointer;
+}
+/**iphone portrat media queries**/
+@media(max-width: 1024px){
+ .imgOne, .imgTwo{
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+ }
+    hr{
+        width: 980px;
+ }
+}
+@media(max-width: 768px){
+    hr{
+        width: 700px;
+    }
+    .location-one, .location-two{
+        font-size: .8rem;
+    }
+    .locationOne-contact, .locationTwo-contact{
+        letter-spacing: .10rem;
+    }
+}
+@media (max-width:752px){
+ header{
+     flex-direction: column;
+     align-items: flex-start;
+ }
+ .logo h1{
+     font-size: 2rem;
+ }
+ .logo h5{
+     font-size: 1rem;
+     letter-spacing: 5px;
+ }
+ .hamburger span{
+     display: block;
+ }
+ .menu{
+    flex-direction: column;
+    width: 100%;
+    display: none;
+ }
+ .menu.open{
+     display: flex;
+ }
+ .list__item{
+     width: 100%;
+     text-align: center;
+     margin: 1rem 0;
+ }
+}
+@media(min-width: 320px) and (max-width: 374px){
+ .logo h1{
+     font-size: 1.5rem;
+    }
+ .logo h5{
+     letter-spacing: 5px;
+ }
+}
+@media(min-width: 321px) and (max-width:414px){
+ .location-one{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     margin: 60px auto;
+     font-size: 1.2rem;
+     max-width: 100%;
+ }
+ .locationOne-contact{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     letter-spacing: .20rem;
+     margin: 0 auto;
+     order: 1;
+ }
+ .locationOne-contact .address, .hours, .tel{
+     padding-bottom: 30px;
+ }
+ .locationOne-pic{
+     margin: 30px 20px;
+     order: 0;
+ }
+ .location-two{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     margin: 60px auto;
+     font-size: 1.2rem;
+     max-width: 100%;
+ }
+ .locationTwo-contact{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     letter-spacing: .20rem;
+     margin: 0 auto;
+     order: 1;
+ }
+ .locationTwo-contact .address, .hours, .tel{
+     padding-bottom: 30px;
+ }
+ .locationTwo-pic{
+     margin: 30px 20px;
+     order: 0;
+ }
+ hr{
+  width: 360px;
+ }
+}  
+@media (max-width: 320px){
+    .location-one{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 60px auto;
+        font-size: .85rem;
+        max-width: 100%;
+    }
+    .locationOne-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        letter-spacing: .20rem;
+        margin: 0 auto;
+        order: 1;
+    }
+    .locationOne-contact, .locationTwo-contact .address, .hours, .tel{
+        padding-bottom: 30px;
+    }
+    .locationOne-pic{
+        margin: 30px 20px;
+        order: 0;
+    }
+    .location-two{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 60px auto;
+        font-size: .85rem;
+        max-width: 100%;
+    }
+    .locationTwo-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        letter-spacing: .20rem;
+        margin: 0 auto;
+        order: 1;
+    }
+    .locationTwo-pic{
+        margin: 30px 20px;
+        order: 0;
+    }
+    hr{
+     width: 300px;
+ }
+}
+/**iphone portrait media queries**/
+@media(max-width: 823px) and (orientation: landscape){
+    hr{
+        width: 750px;
+    }
+}
+@media(max-width:736px) and (orientation: landscape){
+    .location-one, .location-two{
+        font-size: .8rem;
+    }
+    .locationOne-contact, .locationTwo-contact{
+        letter-spacing: .10rem;
+    }
+    hr{
+        max-width: 700px;
+    }
+}
+@media(max-width: 667px) and (orientation: landscape){
+    hr{
+        width: 600px;
+    }
+    .location-one, .location-two{
+        font-size: .8rem;
+    }
+    .locationOne-contact, .locationTwo-contact{
+        letter-spacing: .10rem;
+    }
+}
+@media(max-width: 640px) and (orientation: landscape){
+    hr{
+        width: 600px;
+    }
+}
+@media(max-width: 568px) and (orientation: landscape){
+    hr{
+        width: 550px;
+    }
+    .location-one, .location-two{
+        font-size: .6rem;
+    }
+    .locationOne-contact, .locationTwo-contact{
+        letter-spacing: .02rem;
+        margin: 0 5px;
+    }
+}

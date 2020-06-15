@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&family=Maven+Pro:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    background: lightgrey;
+    height: 150px;
+    border-top: solid 5px #cc4b37;
+    position: relative;
+}
+#image-circle{
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 60px;
+    transform: translate(-50%,-50%);
+}
+.intro, .experience, .work{
+    width: 100%;
+}
+.intro{
+    margin-top: 200px;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details{
+    font-size: 2rem;
+    color: #646464;
+    text-align: center;
+}
+.details .animate{
+    color: rgb(255,255,255);
+    background: rgb(200, 65, 43);
+    font-weight: 300;
+}
+.contact{
+    padding: 1rem;
+    margin: 6rem;
+}
+#contactBtn{
+    text-transform: uppercase;
+    padding: 9px 25px;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 103, 68, 0.91);
+    background: white;
+    color: #cc4b37;
+    outline: none;
+    font-size: 1rem;
+}
+#contactBtn:hover{
+    cursor: pointer;
+}
+.contact-email{
+    display: none;
+    width: 400px;
+    border: 2px solid rgba(255, 103, 68, 0.91);
+    padding: 2rem 1rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 180px;
+    color: #cc4b37;
+    background: #f4f4f4;
+    text-transform: uppercase;
+    text-align: center;
+}
+.contact-email a{
+    color: #cc4b37;
+    text-decoration: none;
+}
+.closeBox:hover{
+    cursor: pointer;
+}
+.experience{
+    background: #4c6d86;
+    text-align: center;
+}
+.experience-title{
+    font-family: "Lato", sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    padding-top: 5rem;
+    margin-bottom: 2rem;
+}
+.tag-line{
+    color: white;
+    font-size: 1.5rem;
+}
+.skills{
+    margin-top: 50px;
+    display:flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+.fas{
+   color: #cc4b37;
+}
+.left-column h3{
+    color: #fff;
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-family: "Lato", sans-serif;
+}
+.right-column h3{
+    color: #fff;
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-family: "Lato", sans-serif;
+}
+.left-column ul li{
+    list-style-type: none;
+    color: #bbd2ff;
+    margin: 1rem;
+    font-family: "Maven pro", sans-serif;
+    font-weight: 600;
+}
+.right-column ul li{
+    list-style-type: none;
+    color: #bbd2ff;
+    margin: 1rem;
+    font-family: "Maven pro", sans-serif;
+    font-weight: 600;
+}
+.work-title, .work-tagLine{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #767779;
+    padding-bottom: 3rem;
+}
+.work-title{
+    font-size: 2rem;
+    color: #cc4b37;
+    padding: 3rem;
+}
+.projectOne, .projectTwo, .projectThree{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 155px;
+}
+.projectInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 600px;
+    max-width: 100%;
+}
+.ImgOne{
+    width: 600px;
+    max-width: 100%;
+    border: .5px solid lightgrey;
+}
+.projectTitle{
+    color: #767779;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.projectOne-description p{
+    padding-bottom: 1.2rem;
+    color: #738182;
+    font-family: 'Maven Pro', sans-serif;
+}
+button{
+    color: #cc4b37;
+    background: white;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 12px 33px;
+    border: 2px solid rgb(255, 138, 89);
+    border-radius: 50px;
+    font-family: 'Lato', sans-serif;
+    outline: none;
+    transition: .3s all ease-in-out;
+}
+button:hover{
+    cursor: pointer;
+    color: white;
+    background: #cc4b37;
+    border-color: #cc4b37;
+}
+.projectTwo .projectInfo{
+    margin-left: 50px;
+}
+.projectTwo-description p{
+    padding-bottom: 1.2rem;
+    color: #738182;
+    font-family: 'Maven Pro', sans-serif;
+}
+.projectThree-description p{
+    padding-bottom: 1.2rem;
+    color: #738182;
+    font-family: 'Maven Pro', sans-serif;
+}
+hr{
+    max-width: 980px;
+    margin: 110px auto;
+    background: lightgrey;
+}
+.about-me{
+    max-width: 100%;
+    padding: 1rem 2rem;
+    letter-spacing: .05rem;
+    line-height: 2rem;
+    margin-top: -50px;
+    margin-bottom: 60px;
+}
+.about-me .title, .about-me .background{
+    width: 1280px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.about-me .title{
+    text-align: center;
+    padding: 2rem 0;
+    text-transform: uppercase;
+    color: #767779;
+    font-family: 'Maven Pro', sans-serif;
+}
+.background p {
+    color: #555;
+    font-family: 'Maven Pro', sans-serif;;
+}
+.socialMedia{
+    max-width: 100%;
+    height: 100px;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    background: #4c6d86;
+}
+.fab{
+    color: #738182;
+}
+.fab:hover{
+    cursor: pointer;
+}
+
+/**Portrait Media Queries**/
+@media(max-width: 1496px){
+    .contact-email{
+        bottom: 20px;
+    }
+}
+@media(max-width: 998px){
+    hr{
+        max-width: 80%;
+    }
+}
+@media(max-width: 790px){
+    .projectTwo .projectPic{
+        order: 1;
+    }
+    .projectTwo .projectInfo{
+        order: 0;
+    }
+    .projectOne, .projectTwo, .projectThree{
+        width: 80%;
+        flex-direction: column;
+        margin: 60px auto;
+    }
+    .projectOne .projectInfo, .projectTwo .projectInfo, .projectThree .projectInfo{
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .projectTwo .projectInfo{
+        margin-left: 0;
+    }
+    .projectOne-description p, .projectTwo-description p, .porjectThree-description p{
+        margin-left: 10px;
+    }
+}
+@media(max-width: 1024px) and (height: 1366px){
+    .contact-email{
+        bottom: 800px;
+    }
+}
+@media(max-width: 768px) and (height: 1024px){
+    .contact-email{
+        bottom: 450px;
+    }
+    .projectOne-description p, .projectTwo-description p, .porjectThree-description p{
+        margin-left: 10px;
+    }
+}
+@media(max-width: 414px) and (height: 736px){
+    .contact-email{
+        bottom: 80px;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .projectOne-description p, .projectTwo-description p, .porjectThree-description p{
+        margin-left: 10px;
+    }
+}
+@media(max-width: 375px) and (height: 812px){
+    #contactBtn{
+        width: 180px;
+    }
+    .contact-email{
+        width: 350px;
+        font-size: .75rem;
+        bottom: 175px;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .projectOne-description p, .projectTwo-description p, .porjectThree-description p{
+        margin-left: 10px;
+    }
+}
+@media(max-width: 375px) and (height:667px){
+    #contactBtn{
+        width: 180px;
+    }
+    .contact-email{
+        width: 350px;
+        font-size: .75rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .projectOne-description p, .projectTwo-description p, .porjectThree-description p{
+        margin-left: 10px;
+    }
+}
+@media(max-width: 320px) and (height: 568px){
+    .details{
+        font-size: 1rem;
+    }
+    #contactBtn{
+        width: 180px;
+    }
+    .contact-email{
+        width: 300px;
+        font-size: .75rem;
+    }
+    .tag-line p{
+        font-size: 1.3rem;
+    }
+    .work-tagLine{
+        font-size: 1.2rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .projectOne-description p, .projectTwo-description p, .porjectThree-description p{
+        margin-left: 10px;
+    }
+}
+@media(max-width: 411px) and (height: 823px){
+    .contact-email{
+        bottom: 200px;
+    }
+    h3{
+        font-size: 1rem;
+    }
+}
+@media(max-width: 411px) and (height: 731px){
+    .contact-email{
+        bottom: 100px;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .projectOne-description p, .projectTwo-description p, .porjectThree-description p{
+        margin-left: 10px;
+    }
+}
+@media (max-width: 360px) and (height: 640px){
+    #contactBtn{
+        width: 180px;
+    }
+    .contact-email{
+        width: 300px;
+        font-size: .75rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .projectOne-description p, .projectTwo-description p, .porjectThree-description p{
+        margin-left: 10px;
+    }
+}
+/**landscape media queries**/
+@media(max-width: 1366px) and (orientation: landscape){
+    .contact-email{
+        bottom: 450px;
+    }
+    hr{
+       max-width: 80%;
+    }
+}
+@media(max-width: 1024px) and (orientation: landscape){
+    .contact-email{
+        bottom: 200px;
+    }
+}
+@media(max-width: 812px) and (orientation: landscape){
+    .contact-email{
+        top: 480px;
+        padding-bottom: 50px;
+    }    
+}
+@media(max-width: 823px) and (orientation: landscape){
+    .contact-email{
+        top: 490px;
+        padding-bottom: 50px;
+    }
+    hr{
+        max-width: 770px;
+    }
+}
+@media(max-width: 736px) and (orientation: landscape){
+    .contact-email{
+        bottom: -150px;
+    }
+    .projectTwo .projectPic{
+        order: 1;
+    }
+    .projectTwo .projectInfo{
+        order: 0;
+    }
+    .projectOne, .projectTwo, .projectThree{
+        width: 80%;
+        flex-direction: column;
+        margin: 60px auto;
+    }
+    .projectOne .projectInfo, .projectTwo .projectInfo, .projectThree .projectInfo{
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .projectTwo .projectInfo{
+        margin-left: 0;
+    }
+    hr{
+        width: 85%;
+    }
+}
+@media(max-width: 731px) and (orientation: landscape){
+    hr{
+        max-width: 700px;
+    }
+}
+@media(max-width: 667px) and (orientation: landscape){
+    .contact-email{
+        bottom: -190px;
+    }
+    hr{
+        max-width: 640px;
+    }
+}
+@media(max-width: 640px) and (orientation: landscape){
+    .contact-email{
+        bottom: -200px;
+    }
+    hr{
+        max-width: 550px;
+    }
+}
+@media(max-width: 568px) and (orientation: landscape){
+    .details{
+        font-size: 1rem;
+    }
+    .contact-email{
+        top: 480px;
+        padding-bottom: 50px;
+    }
+  hr{
+      max-width: 540px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
