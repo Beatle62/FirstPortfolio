@@ -270,12 +270,12 @@ hr{
         order: 0;
     }
     .projectOne, .projectTwo, .projectThree{
-        width: 80%;
+        width: 50%;
         flex-direction: column;
         margin: 60px auto;
     }
     .projectOne .projectInfo, .projectTwo .projectInfo, .projectThree .projectInfo{
-        width: 50%;
+        width: 100%;
         align-items: center;
         margin-bottom: 1rem;
     }
