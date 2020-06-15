@@ -274,7 +274,7 @@ hr{
         flex-direction: column;
         margin: 60px auto;
     }
-    .projectOne .projectInfo, .projectTwo .projectInfo, .porjectThree .projectInfo{
+    .projectOne .projectInfo, .projectTwo .projectInfo, .projectThree .projectInfo{
         width: 100%;
         align-items: center;
         margin-bottom: 1rem;
