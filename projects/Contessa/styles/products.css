@@ -90,12 +90,12 @@ span{
     justify-items: center;
     grid-gap: 15px;
 }
-.img{
+img{
     width: 100%;
     border: 1px solid #e9d8c8;
     transition: 1s;
 }
-.img:hover{
+img:hover{
     transform: scale(1.2);
     z-index: 10;
 }
