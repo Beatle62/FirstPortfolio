@@ -281,9 +281,6 @@ hr{
     .projectTwo .projectInfo{
         margin-left: 0;
     }
-    .projectOne-description p, .projectTwo-description p, .porjectThree-description p{
-        margin-left: 10px;
-    }
 }
 @media(max-width: 1024px) and (height: 1366px){
     .contact-email{
@@ -294,9 +291,6 @@ hr{
     .contact-email{
         bottom: 450px;
     }
-    .projectOne-description p, .projectTwo-description p, .porjectThree-description p{
-        margin-left: 10px;
-    }
 }
 @media(max-width: 414px) and (height: 736px){
     .contact-email{
@@ -304,9 +298,6 @@ hr{
     }
     h3{
         font-size: 1rem;
-    }
-    .projectOne-description p, .projectTwo-description p, .porjectThree-description p{
-        margin-left: 10px;
     }
 }
 @media(max-width: 375px) and (height: 812px){
@@ -321,9 +312,6 @@ hr{
     h3{
         font-size: 1rem;
     }
-    .projectOne-description p, .projectTwo-description p, .porjectThree-description p{
-        margin-left: 10px;
-    }
 }
 @media(max-width: 375px) and (height:667px){
     #contactBtn{
@@ -335,9 +323,6 @@ hr{
     }
     h3{
         font-size: 1rem;
-    }
-    .projectOne-description p, .projectTwo-description p, .porjectThree-description p{
-        margin-left: 10px;
     }
 }
 @media(max-width: 320px) and (height: 568px){
@@ -360,9 +345,6 @@ hr{
     h3{
         font-size: 1rem;
     }
-    .projectOne-description p, .projectTwo-description p, .porjectThree-description p{
-        margin-left: 10px;
-    }
 }
 @media(max-width: 411px) and (height: 823px){
     .contact-email{
@@ -379,9 +361,6 @@ hr{
     h3{
         font-size: 1rem;
     }
-    .projectOne-description p, .projectTwo-description p, .porjectThree-description p{
-        margin-left: 10px;
-    }
 }
 @media (max-width: 360px) and (height: 640px){
     #contactBtn{
@@ -393,9 +372,6 @@ hr{
     }
     h3{
         font-size: 1rem;
-    }
-    .projectOne-description p, .projectTwo-description p, .porjectThree-description p{
-        margin-left: 10px;
     }
 }
 /**landscape media queries**/
