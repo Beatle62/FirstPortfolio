@@ -88,7 +88,7 @@ span{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     justify-items: center;
-    grid-gap: 15px;
+    grid-gap: 10px;
 }
 img{
     width: 100%;
