@@ -278,6 +278,9 @@ hr{
         width: 100%;
         align-items: center;
         margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .projectTwo .projectInfo{
         margin-left: 0;
