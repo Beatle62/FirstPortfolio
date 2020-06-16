@@ -280,7 +280,7 @@ hr{
         margin-bottom: 1rem;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        justify-content: center;
     }
     .projectTwo .projectInfo{
         margin-left: 0;
