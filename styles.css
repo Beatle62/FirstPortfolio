@@ -272,8 +272,7 @@ hr{
     .projectOne, .projectTwo, .projectThree{
         width: 80%;
         flex-direction: column;
-        align-items: center;
-        
+        margin: 60px auto;
     }
     .projectOne .projectInfo, .projectTwo .projectInfo, .projectThree .projectInfo{
         width: 100%;
