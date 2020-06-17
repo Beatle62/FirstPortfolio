@@ -284,6 +284,9 @@ hr{
     .projectTwo .projectInfo{
         margin-left: 0;
     }
+    .projectThree-description{
+        text-align: center;
+    }
 }
 @media(max-width: 1024px) and (height: 1366px){
     .contact-email{
