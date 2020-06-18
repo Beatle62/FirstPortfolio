@@ -99,8 +99,6 @@ header{
 }
 .skills{
     margin-top: 50px;
-    display: -ms-flexbox;
-    -ms-flex-pack: center;
     display:flex;
     justify-content: space-evenly;
     padding: 2rem;
