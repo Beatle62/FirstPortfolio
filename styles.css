@@ -102,6 +102,7 @@ header{
     display:flex;
     justify-content: space-evenly;
     padding: 2rem;
+    text-align: center;
 }
 .fas{
    color: #cc4b37;
